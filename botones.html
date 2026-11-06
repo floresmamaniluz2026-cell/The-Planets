@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Botones</title>
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="icon" type="image/png" href="img/icon.jpg">
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+
+<li class="dropdown">
+<a href="#">Botones y Alerts</a>
+<div class="submenu">
+<a href="botones.html">Botones</a>
+<a href="alerts.html">Alerts</a>
+</div>
+</li>
+
+<li class="dropdown">
+<a href="#">Formularios</a>
+<div class="submenu">
+<a href="form_basico.html">Form Básico</a>
+<a href="form_avanzado.html">Form Avanzado</a>
+</div>
+</li>
+
+<li class="dropdown">
+<a href="#">Tablas</a>
+<div class="submenu">
+<a href="tabla_corta.html">Tabla Corta</a>
+<a href="tabla_extensa.html">Tabla Extensa</a>
+</div>
+</li>
+
+</ul>
+</nav>
+
+<header class="banner">
+<h1>Ejemplos de Botones</h1>
+</header>
+
+<div class="contenido">
+  
+
+
+    <h2>Panel de Control Galáctico</h2>
+
+<p>
+Seleccione un planeta o una acción para iniciar una misión espacial.
+</p>
+
+<br>
+
+<button class="btn1" onclick="reproducirTierra()">Tierra</button>
+
+<button class="btn2" onclick="reproducirSaturno()">Saturno</button>
+
+<button class="btn3" onclick="reproducirMarte()">Marte</button>
+
+<button class="btn4" onclick="reproducirMercurio()">Mercurio</button>
+
+<br><br>
+
+</div>
+<br>
+
+<div class="contenedor-videos">
+
+    <video id="videoTierra" width="300" controls>
+        <source src="video/TIERRA.mp4" type="video/mp4">
+    </video>
+
+    <video id="videoSaturno" width="300" controls>
+        <source src="video/video.mp4" type="video/mp4">
+    </video>
+
+    <video id="videoMarte" width="300" controls>
+        <source src="video/MARTE.mp4" type="video/mp4">
+    </video>
+
+    <video id="videoMercurio" width="300" controls>
+        <source src="video/MERCURIO.mp4" type="video/mp4">
+    </video>
+
+</div>
+
+<script>
+function reproducirTierra() {
+    var video = document.getElementById("videoTierra");
+    video.style.display = "block";
+    video.play();
+}
+
+function reproducirSaturno() {
+    var video = document.getElementById("videoSaturno");
+    video.style.display = "block";
+    video.play();
+}
+
+function reproducirMarte() {
+    var video = document.getElementById("videoMarte");
+    video.style.display = "block";
+    video.play();
+}
+
+function reproducirMercurio() {
+    var video = document.getElementById("videoMercurio");
+    video.style.display = "block";
+    video.play();
+}
+</script>
+
+</body>
+</html>

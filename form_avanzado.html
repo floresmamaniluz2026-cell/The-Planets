@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario Avanzado</title>
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="icon" type="image/png" href="img/icon.jpg">
+</head>
+
+<body>
+
+<nav>
+<ul>
+
+<li><a href="index.html">Inicio</a></li>
+
+<li class="dropdown">
+<a href="#">Botones y Alerts</a>
+<div class="submenu">
+<a href="botones.html">Botones</a>
+<a href="alerts.html">Alerts</a>
+</div>
+</li>
+
+<li class="dropdown">
+<a href="#">Formularios</a>
+<div class="submenu">
+<a href="form_basico.html">Form Básico</a>
+<a href="form_avanzado.html">Form Avanzado</a>
+</div>
+</li>
+
+<li class="dropdown">
+<a href="#">Tablas</a>
+<div class="submenu">
+<a href="tabla_corta.html">Tabla Corta</a>
+<a href="tabla_extensa.html">Tabla Extensa</a>
+</div>
+</li>
+
+</ul>
+</nav>
+
+<header class="banner">
+<h1>Formulario Avanzado</h1>
+</header>
+
+<div class="contenido">
+<h2>Formulario de Postulacion</h2>
+<h3>Completa tus datos y se parte de nosotros!!!!</h3>
+<br>
+<form>
+
+<label>Nombre </label>
+<input type="text" placeholder="Escriba su nombre" required>
+
+<label>Apellidos</label>
+<input type="text" placeholder="Escriba sus apellidos" required>
+
+<label>Telefono</label>
+<input type="tel" placeholder="Número de teléfono" required>
+
+<label>Correo</label>
+<input type="email" placeholder="ingresar email" required>
+
+<label>Contraseña</label>
+<input type="password" placeholder="digite su contraseña" required>
+
+<label>Fecha de Nacimiento</label>
+<input type="date" required>
+
+<label>Edad</label>
+<input type="number" placeholder="Ingrese su edad" min="18" max="45" required>
+
+<label>Género</label>
+
+<div>
+<input type="radio" name="sexo"> Femenino
+<input type="radio" name="sexo"> Masculino
+</div>
+<br>
+<label>Ciudad</label>
+<select>
+<option>New York</option>
+<option>Los Angeles</option>
+<option>Chicago</option>
+<option>Houston</option>
+<option>Phoenix</option>
+<option>Filadelfia</option>
+<option>Dallas</option>
+<option>San Francisco</option>
+<option>Miami</option>
+</select>
+
+
+
+<br>
+<label>Foto</label>
+<input type="file" accept="image/*"  placeholder="Subir fotografia jpg" required>
+<br>
+<label>Requisitos</label>
+
+<div>
+<input type="checkbox"> Titulo de Maestria <br>
+<input type="checkbox"> Ciudadania Estadounidense<br>
+<input type="checkbox"> Expereicia como Piloto<br>
+<input type="checkbox"> Excelente Condicion Fisica<br>
+<input type="checkbox"> Otro Idioma<br>
+</div>
+
+<br>
+
+<label>Describa sus Habilidades</label>
+<textarea rows="5"></textarea>
+
+<input class="btn1" type="reset" value="Volver a llenar">
+<input class="btn1" type="submit" value="Registrar">
+
+</form>
+
+</div>
+
+</body>
+</html>
